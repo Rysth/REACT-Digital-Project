@@ -3,31 +3,26 @@
     {
       "id": 0,
       "to": "/",
-      "className": "tracking-widest px-4 py-1",
       "label": "Main"
     },
     {
       "id": 1,
       "to": "/gallery",
-      "className": "tracking-widest px-4 py-1",
       "label": "Gallery"
     },
     {
       "id": 2,
       "to": "/projects",
-      "className": "tracking-widest px-4 py-1",
       "label": "Projects"
     },
     {
       "id": 3,
       "to": "/certifications",
-      "className": "tracking-widest px-4 py-1",
       "label": "Certifications"
     },
     {
       "id": 4,
       "to": "/contacts",
-      "className": "tracking-widest px-4 py-1",
       "label": "Contacts"
     }
   ]
