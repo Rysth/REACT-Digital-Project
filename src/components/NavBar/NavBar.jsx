@@ -1,4 +1,6 @@
+import { NavLink } from 'react-router-dom';
 import Logo from '../../assets/images/logo.svg';
+import './NavBar.css';
 
 function NavBar() {
   return (
@@ -10,32 +12,32 @@ function NavBar() {
         <nav>
           <ul className="p-0 text-[var(--CL-primary-gray)] flex items-center gap-5">
             <li className="uppercase text-xs ">
-              <a
-                href="/"
-                className="tracking-widest border-t border-b border-[var(--CL-primary-gray)] px-4 py-1"
-              >
+              <NavLink to="/" className="tracking-widest px-4 py-1">
                 Main
-              </a>
+              </NavLink>
             </li>
             <li className="uppercase text-xs ">
-              <a href="/" className="tracking-widest px-4 py-1">
+              <NavLink to="/gallery" className="tracking-widest px-4 py-1">
                 Gallery
-              </a>
+              </NavLink>
             </li>
             <li className="uppercase text-xs ">
-              <a href="/" className="tracking-widest px-4 py-1">
+              <NavLink to="/projects" className="tracking-widest px-4 py-1">
                 Projects
-              </a>
+              </NavLink>
             </li>
             <li className="uppercase text-xs ">
-              <a href="/" className="tracking-widest px-4 py-1">
+              <NavLink
+                to="/certifications"
+                className="tracking-widest px-4 py-1"
+              >
                 Certifications
-              </a>
+              </NavLink>
             </li>
             <li className="uppercase text-xs ">
-              <a href="/" className="tracking-widest px-4 py-1">
+              <NavLink to="/contacts" className="tracking-widest px-4 py-1">
                 Contacts
-              </a>
+              </NavLink>
             </li>
           </ul>
         </nav>
