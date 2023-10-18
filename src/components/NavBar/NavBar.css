@@ -1,0 +1,9 @@
+.active {
+  @apply border-t border-b bg-[var(--CL-primary-gray)] text-white;
+}
+
+@media (min-width: 640px) {
+  .active {
+    @apply border-t border-b border-[var(--CL-primary-gray)] bg-transparent text-[var(--CL-primary-gray)];
+  }
+}

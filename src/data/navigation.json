@@ -1,0 +1,29 @@
+{
+  "navLinks": [
+    {
+      "id": 0,
+      "to": "/",
+      "label": "Main"
+    },
+    {
+      "id": 1,
+      "to": "/gallery",
+      "label": "Gallery"
+    },
+    {
+      "id": 2,
+      "to": "/projects",
+      "label": "Projects"
+    },
+    {
+      "id": 3,
+      "to": "/certifications",
+      "label": "Certifications"
+    },
+    {
+      "id": 4,
+      "to": "/contacts",
+      "label": "Contacts"
+    }
+  ]
+}
