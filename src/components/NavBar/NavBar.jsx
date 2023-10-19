@@ -29,7 +29,7 @@ function NavBar() {
               !isOpen && 'hidden'
             }`}
           >
-            {NavigationLinks.navLinks.map((navigation) => (
+            {NavigationLinks.data.map((navigation) => (
               <li className="w-full text-xs uppercase " key={navigation.id}>
                 <NavLink
                   to={navigation.to}
@@ -42,7 +42,7 @@ function NavBar() {
             ))}
           </ul>
           <ul className="p-0 text-[var(--CL-primary-gray)] items-center hidden sm:flex md:gap-5">
-            {NavigationLinks.navLinks.map((navigation) => (
+            {NavigationLinks.data.map((navigation) => (
               <li className="text-xs uppercase" key={navigation.id}>
                 <NavLink
                   to={navigation.to}
