@@ -12,7 +12,7 @@ function HeroSection() {
 
   useEffect(() => {
     dispatch(projectActions.getProjectQuantity());
-  }, []);
+  }, [dispatch]);
 
   const handleProjectChange = (ID) => {
     if (ID >= 1 && ID <= projectsArray.length) setActualProject(ID);
@@ -20,7 +20,7 @@ function HeroSection() {
 
   useEffect(() => {
     dispatch(projectActions.getProjectById(actualProject));
-  }, [actualProject]);
+  }, [actualProject, dispatch]);
 
   return (
     <section>
@@ -36,14 +36,14 @@ function HeroSection() {
             <div className="relative flex items-center justify-center w-full gap-3 mx-auto my-3 md:justify-start md:mt-10 lg:mt-20">
               <button
                 type="button"
-                className="z-20 w-12 h-10 bg-white border lg:w-16 lg:h-14"
+                className="z-20 w-12 h-10 bg-white border lg:w-16 lg:h-14 md:hover:scale-110 md:transition md:active:bg-slate-300 "
                 onClick={() => handleProjectChange(actualProject - 1)}
               >
                 <i className="fa-solid fa-arrow-left" />
               </button>
               <button
                 type="button"
-                className="z-20 w-12 h-10 lg:w-16 lg:h-14 border bg-[var(--CL-primary-extra-light)]"
+                className="z-20 w-12 h-10 lg:w-16 lg:h-14 border bg-[var(--CL-primary-extra-light)] md:hover:scale-110 md:transition md:active:bg-slate-300 "
                 onClick={() => handleProjectChange(actualProject + 1)}
               >
                 <i className="fa-solid fa-arrow-right" />
