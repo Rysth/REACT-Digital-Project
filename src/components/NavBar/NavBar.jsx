@@ -11,14 +11,14 @@ function NavBar() {
   const closeMobileMenu = () => setIsOpen(false);
 
   return (
-    <div>
-      <div className="container max-w-screen-xl mx-auto p-4 sm:py-6 flex flex-wrap items-center justify-between animate__animated animate__fadeInDown ">
+    <div className="sticky top-0 z-50 bg-white">
+      <div className="container flex flex-wrap items-center justify-between max-w-screen-xl p-4 mx-auto sm:py-6 animate__animated animate__fadeInDown ">
         <a href="/" rel="noopener noreferrer">
           <img src={Logo} alt="" className="w-16 sm:w-24" />
         </a>
         <button
           type="button"
-          className="sm:hidden text-3xl"
+          className="text-3xl sm:hidden"
           onClick={handleMobileMenu}
         >
           <i className="fa-solid fa-bars text-[var(--CL-primary-gray)]" />
@@ -30,10 +30,10 @@ function NavBar() {
             }`}
           >
             {NavigationLinks.navLinks.map((navigation) => (
-              <li className="uppercase text-xs w-full " key={navigation.id}>
+              <li className="w-full text-xs uppercase " key={navigation.id}>
                 <NavLink
                   to={navigation.to}
-                  className="tracking-widest px-3 py-3 block font-bold"
+                  className="block px-3 py-3 font-bold tracking-widest"
                   onClick={closeMobileMenu}
                 >
                   {navigation.label}
@@ -43,10 +43,10 @@ function NavBar() {
           </ul>
           <ul className="p-0 text-[var(--CL-primary-gray)] items-center hidden sm:flex md:gap-5">
             {NavigationLinks.navLinks.map((navigation) => (
-              <li className="uppercase text-xs" key={navigation.id}>
+              <li className="text-xs uppercase" key={navigation.id}>
                 <NavLink
                   to={navigation.to}
-                  className="tracking-widest px-4 py-1"
+                  className="px-4 py-1 tracking-widest"
                   onClick={closeMobileMenu}
                 >
                   {navigation.label}
