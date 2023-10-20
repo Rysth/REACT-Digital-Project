@@ -23,6 +23,9 @@
   --CL-primary-gray: #333;
   --CL-primary-light: #bdbdbd;
   --CL-primary-extra-light: #f2f2f2;
+
+  --CL-neutral-gray: #fbfbfb;
+
   --FF-roboto: 'Roboto', sans-serif;
 }
 
@@ -32,6 +35,16 @@
   box-sizing: border-box;
 }
 
+html,
+body {
+  height: max-content;
+}
+
 body {
   font-family: var(--FF-roboto);
+}
+
+/* Buttons */
+.btn {
+  @apply p-4 md:px-8 md:py-5 text-xs tracking-widest uppercase bg-white border border-gray-300 text-[var(--CL-primary-gray)] md:hover:bg-[var(--CL-primary-gray)] md:hover:text-white md:active:bg-slate-300 md:active:text-[var(--CL-primary-gray)] transition;
 }
