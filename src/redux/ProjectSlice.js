@@ -1,7 +1,7 @@
 import { createSlice } from '@reduxjs/toolkit';
-import Portrait1 from '../assets/images/portrait/portrait.png';
+import Portrait1 from '../assets/images/portrait/portrait_1.png';
 import Portrait2 from '../assets/images/portrait/portrait_2.jpg';
-import Portrait3 from '../assets/images/portrait/Portrait_3.jpg';
+import Portrait3 from '../assets/images/portrait/portrait_3.jpg';
 
 const initialState = {
   projectsArray: [
