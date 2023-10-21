@@ -1,7 +1,7 @@
 import { Link } from 'react-router-dom';
 import Portrait from '../../assets/images/portrait/portrait_1.png';
-import Portrait2 from '../../assets/images/portrait/portrait_2.jpg';
-import Portrait3 from '../../assets/images/portrait/portrait_3.jpg';
+import Portrait2 from '../../assets/images/portrait/portrait_2.png';
+import Portrait3 from '../../assets/images/portrait/portrait_3.png';
 import Subtitle from '../../components/Subtitle/Subtitle';
 
 function AboutSection() {
