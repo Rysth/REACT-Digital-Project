@@ -3,7 +3,7 @@ import Subtitle from '../../components/Subtitle/Subtitle';
 function MissionSection() {
   return (
     <div>
-      <div className="container max-w-screen-xl p-4 mx-auto">
+      <div className="container max-w-screen-xl p-4 mx-auto animate__animated animate__fadeIn animate__slow">
         <Subtitle title="Main Focus/Mission Statement" />
         <div className="flex flex-col md:flex-row md:justify-between text-[var(--CL-primary-gray)] mt-10 gap-5">
           <div className="flex items-center gap-3">
