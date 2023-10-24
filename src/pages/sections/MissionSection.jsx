@@ -5,7 +5,7 @@ function MissionSection() {
     <div>
       <div className="container max-w-screen-xl p-4 mx-auto animate__animated animate__fadeIn animate__slow">
         <Subtitle title="Main Focus/Mission Statement" />
-        <div className="flex flex-col md:flex-row md:justify-between text-[var(--CL-primary-gray)] mt-10 gap-5">
+        <div className="flex flex-col sm:flex-row md:justify-between text-[var(--CL-primary-gray)] mt-10 gap-5">
           <div className="flex items-center gap-3">
             <p className="text-6xl font-black md:text-8xl lg:text-[12rem] text-[var(--CL-primary-extra-light)]">
               1
