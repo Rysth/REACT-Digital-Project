@@ -13,40 +13,55 @@ function ProjectSection() {
         <Subtitle title="Our Projects" />
         <div className="grid gap-5 mt-10">
           <div className="flex flex-col gap-5 sm:flex-row">
-            <Link to="/" className="flex-grow sm:w-1/2 ">
+            <Link
+              to="/"
+              className="relative flex-grow sm:w-1/2 md:hover:scale-105 md:hover:shadow-2xl md:transition md:grayscale md:hover:grayscale-0"
+            >
               <img
                 src={Project1}
-                alt=""
+                alt="First building"
                 className="max-h-[255px] object-cover w-full h-full"
               />
             </Link>
-            <Link to="/" className="flex-grow sm:w-1/2 ">
+            <Link
+              to="/"
+              className="flex-grow sm:w-1/2 md:hover:scale-105 md:hover:shadow-2xl md:transition md:grayscale md:hover:grayscale-0"
+            >
               <img
                 src={Project2}
-                alt=""
+                alt="Second building"
                 className="max-h-[255px] object-cover w-full h-full"
               />
             </Link>
           </div>
           <div className="flex flex-row lg:gap-5">
-            <Link to="/" className="w-2/5 sm:w-1/4">
+            <Link
+              to="/"
+              className="w-2/5 sm:w-1/4 md:hover:scale-105 md:hover:shadow-2xl md:transition md:grayscale md:hover:grayscale-0"
+            >
               <img
                 src={Project3}
-                alt=""
+                alt="Third building"
                 className=" max-h-[255px] object-cover w-full h-full"
               />
             </Link>
-            <Link to="/" className="w-1/5 sm:w-3/6">
+            <Link
+              to="/"
+              className="w-1/5 sm:w-3/6 md:hover:scale-105 md:hover:shadow-2xl md:transition md:grayscale md:hover:grayscale-0"
+            >
               <img
                 src={Project4}
-                alt=""
-                className=" max-h-[255px] object-cover w-full h-full"
+                alt="Fourth building"
+                className=" max-h-[255px] object-cover w-full h-full "
               />
             </Link>
-            <Link to="/" className="w-2/5 sm:w-1/4">
+            <Link
+              to="/"
+              className="w-2/5 sm:w-1/4 md:hover:scale-105 md:hover:shadow-2xl md:transition md:grayscale md:hover:grayscale-0"
+            >
               <img
                 src={Project5}
-                alt=""
+                alt="Fifth building"
                 className=" max-h-[255px] object-cover w-full h-full"
               />
             </Link>
