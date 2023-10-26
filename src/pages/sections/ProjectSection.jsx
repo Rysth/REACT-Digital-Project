@@ -67,6 +67,15 @@ function ProjectSection() {
             </Link>
           </div>
         </div>
+        <div className="flex justify-center md:justify-end">
+          <Link
+            to="/projects"
+            className="p-4 md:px-8 md:py-5 text-xs tracking-widest uppercase flex items-center gap-3 justify-center text-white bg-[var(--CL-primary-gray)] my-10 md:hover:translate-x-5 transition"
+          >
+            All Projects
+            <i className="fa-solid fa-arrow-right" />
+          </Link>
+        </div>
       </div>
     </div>
   );
