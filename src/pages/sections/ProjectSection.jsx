@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import Subtitle from '../../components/Subtitle/Subtitle';
 import Project1 from '../../assets/images/projects/project_1.jpg';
 import Project2 from '../../assets/images/projects/project_2.jpg';
@@ -11,34 +12,44 @@ function ProjectSection() {
       <div className="container max-w-screen-xl p-4 mx-auto animate__animated animate__fadeIn animate__slow">
         <Subtitle title="Our Projects" />
         <div className="grid gap-5 mt-10">
-          <div className="flex flex-col sm:flex-row lg:gap-5">
-            <img
-              src={Project1}
-              alt=""
-              className="flex-grow sm:w-1/2 max-h-[255px] object-cover"
-            />
-            <img
-              src={Project2}
-              alt=""
-              className="sm:w-1/2 max-h-[255px] object-cover"
-            />
+          <div className="flex flex-col gap-5 sm:flex-row">
+            <Link to="/" className="flex-grow sm:w-1/2 ">
+              <img
+                src={Project1}
+                alt=""
+                className="max-h-[255px] object-cover w-full h-full"
+              />
+            </Link>
+            <Link to="/" className="flex-grow sm:w-1/2 ">
+              <img
+                src={Project2}
+                alt=""
+                className="max-h-[255px] object-cover w-full h-full"
+              />
+            </Link>
           </div>
           <div className="flex flex-row lg:gap-5">
-            <img
-              src={Project4}
-              alt=""
-              className="w-2/5 sm:w-1/4 max-h-[255px] object-cover"
-            />
-            <img
-              src={Project5}
-              alt=""
-              className="w-1/5 sm:w-3/6 max-h-[255px] object-cover"
-            />
-            <img
-              src={Project3}
-              alt=""
-              className="w-2/5 sm:w-1/4 max-h-[255px] object-cover"
-            />
+            <Link to="/" className="w-2/5 sm:w-1/4">
+              <img
+                src={Project3}
+                alt=""
+                className=" max-h-[255px] object-cover w-full h-full"
+              />
+            </Link>
+            <Link to="/" className="w-1/5 sm:w-3/6">
+              <img
+                src={Project4}
+                alt=""
+                className=" max-h-[255px] object-cover w-full h-full"
+              />
+            </Link>
+            <Link to="/" className="w-2/5 sm:w-1/4">
+              <img
+                src={Project5}
+                alt=""
+                className=" max-h-[255px] object-cover w-full h-full"
+              />
+            </Link>
           </div>
         </div>
       </div>
