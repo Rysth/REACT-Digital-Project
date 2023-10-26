@@ -9,7 +9,7 @@ import Project5 from '../../assets/images/projects/project_5.jpg';
 function ProjectSection() {
   return (
     <div className="mt-10">
-      <div className="container max-w-screen-xl p-4 mx-auto animate__animated animate__fadeIn animate__slow">
+      <div className="container max-w-screen-xl p-4 mx-auto my-10 animate__animated animate__fadeIn animate__slow md:my-20">
         <Subtitle title="Our Projects" />
         <div className="grid gap-5 mt-10">
           <div className="flex flex-col gap-5 sm:flex-row">
