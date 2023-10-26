@@ -1,12 +1,13 @@
 import Subtitle from '../../components/Subtitle/Subtitle';
+import Banner from '../../assets/images/projects/project_5.jpg';
 
 function ContactSection() {
   return (
     <div>
       <div className="container max-w-screen-xl p-4 mx-auto text-[var(--CL-primary-gray)]">
         <Subtitle title="Contact Us" />
-        <div className="grid lg:grid-cols-[40%_1fr]">
-          <form className="grid gap-3 my-10">
+        <div className="grid lg:grid-cols-[40%_1fr] my-10 gap-7">
+          <form className="grid gap-3">
             <fieldset className="border-0 outline-0">
               <label htmlFor="name">
                 <input
@@ -64,6 +65,9 @@ function ContactSection() {
               </label>
             </fieldset>
           </form>
+          <picture className="col-start-1 col-end-2 row-start-1 row-end-2 max-h-60 lg:max-h-full lg:row-start-1 lg:col-start-2">
+            <img src={Banner} alt="" className="object-cover w-full h-full" />
+          </picture>
         </div>
       </div>
     </div>
