@@ -7,10 +7,11 @@ function ContactSection() {
     register,
     handleSubmit,
     formState: { errors },
+    reset,
   } = useForm();
 
-  const onSubmit = (data) => {
-    console.log(data); // Form data is available here
+  const onSubmit = () => {
+    reset();
   };
 
   return (
