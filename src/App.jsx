@@ -3,6 +3,7 @@ import { Provider } from 'react-redux';
 import store from './redux/Store';
 import Home from './pages/Home';
 import NavBar from './components/NavBar/NavBar';
+import Footer from './components/Footer/Footer';
 import 'animate.css';
 import './App.css';
 
@@ -18,6 +19,7 @@ function App() {
           <Route path="/certifications" element="" />
           <Route path="/contacts" element="" />
         </Routes>
+        <Footer />
       </BrowserRouter>
     </Provider>
   );
